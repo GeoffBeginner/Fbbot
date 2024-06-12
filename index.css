@@ -1,0 +1,115 @@
+* {
+		box-sizing: border-box;
+}
+body {
+		background-color: #000;
+		color: #898989;
+		font-family: serif;
+}
+.navbar, .footer {
+		background-color: transparent;
+		color: #898989;
+		padding: 3px 0;
+		text-align: center;
+		position: sticky;
+		width: 100%;
+}
+.navbar {
+		top: 0;
+}
+.footer {
+		bottom: 0;
+		border: 1px solid #4caf50;
+		background-color: #010;
+		border-radius: 5px;
+}
+.container {
+		width: 90%;
+		max-width: 600px;
+		margin: 13px auto 70px auto; 
+}
+h1 {
+		text-align: center;
+}
+#loginForm {
+		background: #f4f4f4;
+		padding: 30px;
+		border-radius: 10px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		margin-bottom: 20px;
+}
+label {
+		font-weight: bold;
+}
+input, textarea{
+		width: 100%;
+		padding: 10px;
+		margin: 10px 0;
+		border-radius: 5px;
+		border: 1px solid #ccc;
+}
+button {
+		background: transparent;
+		color: #fff;
+		border: none;
+		cursor: pointer;
+		border-radius: 5px;
+}
+button:hover {
+		background: silver;
+}
+.box {
+		background: #010;
+		padding: 10px;
+		border-radius: 5px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		margin-bottom: 20px;
+		animation: fadeIn 1s ease-in-out;
+}
+.log-box {
+		height: 270px;
+		overflow: hidden;
+}
+.active-session {
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px;
+}
+.active-session img {
+		border-radius: 50%;
+		margin-right: 10px;
+		width: 40px;
+		height: 40px;
+}
+#code-element {
+		margin: 0 auto;
+		display: block;
+}
+.p-element {
+		text-align: center;
+		font-family: monospace;
+}
+.h3-element {
+		text-align: center;
+}
+button a{
+		text-decoration: none;
+		color: lime;
+}
+.img-element {
+		border-radius: 100px;
+		box-shadow: 3px 1px 3px;
+		border: 1px solid;
+}
+.hyper1-element {
+		text-align: center;
+}
+#loginForm {
+		background-color: #010;
+}
+#appState {
+		background-color: lightgrey;
+}
+#admin_uid {
+		background-color: lightgrey;
+}

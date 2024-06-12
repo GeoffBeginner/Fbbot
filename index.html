@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="index.css">
+<title>AUTO-FB-BOT</title>
+<meta property="logo:title" content="AUTO-FB-BOT">
+<meta property="logo:description" content="Auto-Fb-Bot help user to create their own automated-bot without coding skills">
+<meta property="logo:image" content="logo.png">
+<meta property="logo:type" content="website">
+<meta property="logo:site_name" content="Auto-Fb-Bot">
+<link rel="icon" sizes="192x192" href="logo.png">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="stylesheet" href="npmsweetalert2@10">
+<link rel="stylesheet" href="1.css">
+<link rel="stylesheet" href="styles.css">
+      <style>      
+    </style>
+</head>
+<body>
+<div class="fbbot_modal">
+  <div class="modal-content">
+      <h1 class="hyper1-element">HOME</h1>
+  		   <div class="footer">
+         <p>Time: <span id="time"></span>
+         </p>
+         <p>Ping: <span id="ping"></span>
+         </p>
+    <div class="modal-body">
+    		<center>
+    <img style="width:100px; height: 10" src="logo1.png" class="img-element"></img>
+    <br>
+    <code>
+   <b>
+   		Auto-Fb-Bot are very highly powerful website that can transform your account into automated-bot
+     </code>
+    </center>
+      </ul>
+   </div>
+  </div>
+</div>
+<div class="fbbot_as">
+  <div class="modal-content">
+    <div class="modal-body">
+  <h3 class="h3-element">GUIDE:</h3>
+ <img style="width:100%" src="guide1.jpg"></img>
+ <button>
+<a href="https://play.google.com/store/apps/details?id=com.kiwibrowser.browser">⬇️Click Here to DL KIWI BROWSER</a>
+</button>
+ <hr>
+  <img style="width:100%" src="guide2.jpg"></img> 
+  <button>
+  <a href="https://github.com/c3cbot/c3c-fbstate/archive/refs/tags/1.5.zip ">⬇️Click Here to DL c3c-fbstate</a>
+  </button>
+  <hr>
+  <img style="width:100%" src="guide3.jpg"></img> 
+  <hr>
+  <img style="width:100%" src="guide4.jpg"></img> 
+  <hr>
+  <img style="width:100%" src="guide5.jpg"></img> 
+  <hr>
+  <img style="width:100%" src="guide6.jpg"></img> 
+  <hr>
+  <img style="width:100%" src="guide7.jpg"></img>
+  <hr>
+  <img style="width:100%" src="guide8.jpg"></img>
+  <hr>
+  <img style="width:100%" src="guide9.jpg"></img>
+  <hr>
+  <img style="width:100%" src="guide10.jpg"></img>
+  <hr>
+  <img style="width:100%" src="guide11.jpg"></img>
+  <hr>
+  <img style="width:100%" src="guide12.jpg"></img>
+  <hr>
+  <img style="width:100%" src="guide13.jpg"></img>
+  <hr>
+  <img style="width:100%" src="guide14.jpg"></img>
+  <hr>
+  <img style="width:100%" src="guide15.jpg"></img>
+  <hr>
+  <img style="width:100%" src="guide16.jpg"></img>
+   </div>
+  </div>
+</div>
+<!--Div-content-->
+    </div>
+    <!--Div-container1-->
+    <div class="container">
+         <p style="color:lime;font-size: 9px" class="p-element">**Use Dummy Account**</p>
+        <form id="loginForm">
+            <label for="appState">Login Appstate</label>
+            <textarea id="appState" placeholder='[
+    {
+        "key": "sb",
+        "value": "KJZKZtc9XItC51NZU8HfLeQ-",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-05-24T04:31:46.371Z",
+        "lastAccessed": "2024-05-24T04:31:46.373Z' name="AppState" rows="5" required></textarea>
+            <label for="admin_uid" required>Admin UID:</label>
+            <input type="text" placeholder= "61556251846264" id="admin_uid" name="admin_uid" required>
+            <label for="prefix">Select Prefix:</label>
+            <select id="prefix"  class="myPrefix" name="prefix" required>
+  
+  <option value="!">!</option>
+  <option value="?">?</option>
+  <option value=",">,</option>
+  <option value="/">/</option>
+  <option value="+">+</option>
+  <option value=".">.</option>
+    <option value="_">_</option>
+      <option value="$">$</option>
+        <option value="*">*</option>
+      <option value="#">#</option>    
+        <option value="@">@</option>
+          <option value="&">&</option>
+</select>           
+     <button type="submit"><img style="width: 30px;" src="send.png" border="0"></button>
+        </form>       
+        <br>
+        <!--Active Season-->
+        <div class="box" id="activeSessions">
+            <h1>Active Sessions</h1>
+        </div>
+        <div class="box log-box" id="logs">
+            <h1>Logs</h1>
+        </div>
+    </div>
+    <div class="footer">
+       <span  id="active"></span> | © Geoff 2024 - FD |
+    </div>
+<script>
+function showAds() {
+var ads = [
+    'https://bit.ly/43yn66n',
+    'https://bit.ly/4adDagg',
+    'https://bit.ly/3VzhG92',
+    'https://bit.ly/3xkQTDg',
+    'https://bit.ly/3TTUAZC'
+];
+var index = Math.floor(Math.random() * ads.length);
+window.location.href = ads[index];
+}
+
+function measurePing() {
+var xhr = new XMLHttpRequest();
+var startTime, endTime;
+xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4) {
+      endTime = Date.now();
+      var pingTime = endTime - startTime;
+      document.getElementById("ping").textContent = pingTime + " ms";
+    }
+  };
+xhr.open("GET", location.href + "?t=" + new Date().getTime());
+startTime = Date.now();
+xhr.send();
+}
+setInterval(measurePing, 1000);
+
+function updateTime() {
+  const now = new Date();
+  const options = {
+    timeZone: 'Asia/Manila',
+    hour12: true,
+    hour: 'numeric',
+    minute: 'numeric',
+    second: 'numeric'
+  };
+const formattedTime = now.toLocaleString('en-US', options);
+  document.getElementById('time').textContent = formattedTime;
+}
+updateTime();
+setInterval(updateTime, 1000);
+</script>
+    <script src="npmsweetalert210"></script>
+     <script src="1.js"></script>
+    <script src="index.js"></script>
+      <script src="npmsweetalert211distsweetalert2.min.js"></script>
+    
+</body>
+</html>
